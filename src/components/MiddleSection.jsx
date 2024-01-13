@@ -8,7 +8,7 @@ const MiddleSection = () => {
     <div className='p-8 pt-8'>
       <h1 className='text-blue-800 font-bold'>Retirement Income</h1>
       <h2 className='text-2xl mb-4'>Starting Year 2056</h2>
-      <div className='flex gap-5 mb-8'>
+      <div className='flex gap-5 mb-8 middleData'>
         {RetirementIncome.map((item) => (
           <div className='flex flex-col  flex-1 p-2 border-b-2 border-blue-600'>
             <h2 className='text-2xl font-bold mb-2'>{item.data}</h2>
