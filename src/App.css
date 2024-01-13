@@ -2,8 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* RESPONSIVENESS CODE  */
 .App{
     display: grid;
     grid-template-columns: 90px 1fr 2fr 1fr;
     grid-gap: 32px;
+}
+
+.phone-search,
+.phone-noti{
+    display: none;
+}
+@media (max-width: 770px){
+    .App{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 80px;
+    }
+    .navSection{
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        height: auto;
+        background-color: white;
+        border-top: 2px solid rgba(128, 128, 128, 0.2);
+        padding: 0;
+    }
+    .navSection > div:nth-child(1),
+    .navSection > div:last-child
+    {
+        display: none;
+    }
+    .navSection > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 16px;
+    }
+    .navSection > div > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+    }
+    .phone-search{
+        display: flex;
+    }
+    .rightSection{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px){
+    .App{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    .phone-noti{
+        display: flex;
+    }
 }

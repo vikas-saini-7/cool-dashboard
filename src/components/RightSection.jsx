@@ -3,7 +3,7 @@ import { RightCard2Data } from '../DUMMY_DATA';
 
 const RightSection = () => {
   return (
-    <div className='p-4 pt-8 w-4/5 '>
+    <div className='p-4 pt-8 w-4/5 rightSection'>
       
       <div className=' flex flex-col gap-4 bg-gray-50 p-4'>
         <h2 className='mt-4 mb-4 font-semibold'>Retirement Strategy</h2>

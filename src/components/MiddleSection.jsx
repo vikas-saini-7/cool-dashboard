@@ -1,10 +1,11 @@
 import React from 'react';
 import { RetirementIncome } from '../DUMMY_DATA';
+import MyChart from './MyChart';
+import MyChartCircle from './MyChartCircle';
 
 const MiddleSection = () => {
   return (
-    <div className='p-4 pt-8'>
-
+    <div className='p-8 pt-8'>
       <h1 className='text-blue-800 font-bold'>Retirement Income</h1>
       <h2 className='text-2xl mb-4'>Starting Year 2056</h2>
       <div className='flex gap-5 mb-8'>
@@ -18,12 +19,13 @@ const MiddleSection = () => {
 
       <h2 className='mt-4 font-semibold'>Contributions Overtime</h2>
       {/* Chart  */}
+      <MyChart/>
 
       <h2 className='mt-4 font-semibold'>How do I compare to my peers?</h2>
       <p className='text-gray-500'>These numbers represent current goal achievement</p>
       {/* Chart 2 */}
-
-
+      <MyChartCircle/>
+      
     </div>
   )
 }

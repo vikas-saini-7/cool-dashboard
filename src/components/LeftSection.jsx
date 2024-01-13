@@ -6,6 +6,10 @@ const LeftSection = () => {
     // Left 
     // border-x-2
     <div className='bg-gray-50  px-4 pt-8'>
+        
+        <div className='flex justify-end rounded-xl pr-4 py-3 cursor-pointer text-gray-500 phone-noti'>
+            <i class="fa-solid fa-bell"></i>
+        </div>
         {/* top  */}
         <div class="flex flex-col space-y-4 p-4 ">
             <div class="flex items-center mb-4">
