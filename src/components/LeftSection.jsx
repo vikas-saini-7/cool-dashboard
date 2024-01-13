@@ -13,7 +13,7 @@ const LeftSection = () => {
         {/* top  */}
         <div class="flex flex-col space-y-4 p-4 ">
             <div class="flex items-center mb-4">
-                <img src="https://placehold.co/100x100" alt="user avatar" class="w-20 rounded-full object-cover" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1200px-Circle-icons-profile.svg.png" alt="user avatar" class="w-20 rounded-full object-cover" />
                 <div className='ml-4'>
                     <h3 class="font-semibold text-2xl">Hi {userInfo.name},</h3>
                     <p class="text-sm text-gray-500">welcome Back.</p>
